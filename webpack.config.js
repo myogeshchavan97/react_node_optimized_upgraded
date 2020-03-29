@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = (env) => {
     console.log(env);
     return {
-        entry: ['@babel/polyfill','./src/app.js'],
+        entry: './src/app.js',
         output: {
             filename: 'bundle.js',
             path: path.join(__dirname, 'public')
